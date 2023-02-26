@@ -4,7 +4,7 @@ const Card = ({ card, index }) => {
   return (
     <div key={index} className="card">
       <div className="rotate_img">
-        <img alt="rotate img" src={"/images/rotate.svg"} className="img" />
+        <img alt="rotate img" src={"./images/rotate.svg"} className="img" />
       </div>
       <img alt="product img" src={card.img} className="card_img" />
       <p className="desc">{card.desc}</p>
@@ -26,11 +26,11 @@ const Card = ({ card, index }) => {
         <div className="rating">
           {[...new Array(card.total_rating)].map((arr, index) => {
             return index < Math.floor(card.rating) ? (
-              <img alt="star" src={"/images/star.svg"} className="star" key={index} />
+              <img alt="star" src={"./images/star.svg"} className="star" key={index} />
             ) : (
               <img
                 alt="empty star"
-                src={"/images/empty_star.svg"}
+                src={"./images/empty_star.svg"}
                 className="empty_star"
                 key={index}
               />

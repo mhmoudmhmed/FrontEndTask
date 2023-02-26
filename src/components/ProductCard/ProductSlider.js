@@ -30,7 +30,7 @@ const ProductSlider = ({ product }) => {
           </div>
           <div className="bottom_slider">
             <div className="swipe_left">
-              <img src="/images/swipe.svg" alt="swipe" />
+              <img src="./images/swipe.svg" alt="swipe" />
             </div>
             {product.product_images.map((image, index) => (
               <div
@@ -45,7 +45,7 @@ const ProductSlider = ({ product }) => {
               </div>
             ))}
             <div className="swipe_right">
-              <img src="/images/swipe.svg" alt="swipe" />
+              <img src="./images/swipe.svg" alt="swipe" />
             </div>
           </div>
         </div>

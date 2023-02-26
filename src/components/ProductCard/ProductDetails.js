@@ -28,11 +28,11 @@ const ProductDetails = ({ product, quantity, setQuantity, addCartItems }) => {
         <div className="rating_stars">
           {[...new Array(product.total_rating)].map((arr, index) => {
             return index < Math.floor(product.rating) ? (
-              <img alt="star" src={"/images/star.svg"} className="star" key={index} />
+              <img alt="star" src={"./images/star.svg"} className="star" key={index} />
             ) : (
               <img
                 alt="empty star"
-                src={"/images/empty_star.svg"}
+                src={"./images/empty_star.svg"}
                 className="empty_star"
                 key={index}
               />
@@ -96,11 +96,11 @@ const ProductDetails = ({ product, quantity, setQuantity, addCartItems }) => {
         <p className="text">Quantity</p>
         <div className="add_quantity">
           <div className="click" onClick={() => onRemoveQuantity()}>
-            <img src={"/images/remove.svg"} alt="remove" />
+            <img src={"./images/remove.svg"} alt="remove" />
           </div>
           <p className="quantity"> {quantity} </p>
           <div className="click" onClick={() => onAddQuantity()}>
-            <img src={"/images/plus.svg"} alt="plus" />
+            <img src={"./images/plus.svg"} alt="plus" />
           </div>
         </div>
         <div className="btns">

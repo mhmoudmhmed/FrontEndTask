@@ -10,20 +10,20 @@ const InfoHeader = ({ quantity, items }) => {
       <div className="row">
         <div className="info_wrapper">
           <form>
-            <img alt="newsletter" src={"/images/searchicon.svg"} />
+            <img alt="newsletter" src={"./images/searchicon.svg"} />
             <input type="text" placeholder="Search" />
           </form>
-          <img src={"/images/addidas.svg"} alt="brand" className="brand_img" />
+          <img src={"./images/addidas.svg"} alt="brand" className="brand_img" />
           <div className="product_actions">
             <div className="col" onClick={() => setDrawer(true)}>
               <div className="badge">{quantity}</div>
-              <img alt="cart" src={"/images/cart.svg"} /> cart
+              <img alt="cart" src={"./images/cart.svg"} /> cart
             </div>
             <div className="col">
-              <img alt="wishlist" src={"/images/wishlist.svg"} /> wishlist
+              <img alt="wishlist" src={"./images/wishlist.svg"} /> wishlist
             </div>
             <div className="col">
-              <img alt="user login" src={"/images/user.svg"} /> login
+              <img alt="user login" src={"./images/user.svg"} /> login
             </div>
           </div>
         </div>
