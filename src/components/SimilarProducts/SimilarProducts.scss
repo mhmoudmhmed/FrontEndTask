@@ -1,0 +1,195 @@
+p {
+  margin: 0;
+}
+
+.similar_products_row {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: auto;
+}
+
+.similar_products_container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin-bottom: 80px;
+  gap: 24px;
+  .info {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    .title {
+      font-size: 28px;
+      color: #542e90;
+      font-weight: bold;
+    }
+    .desc {
+      font-size: 22px;
+      color: #575756;
+      font-weight: 500;
+    }
+  }
+  .card_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    .card {
+      position: relative;
+      width: 25%;
+      min-height: 440px;
+      box-shadow: 0px 0px 5px #00000026;
+      background: #ffffff 0% 0% no-repeat padding-box;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: stretch;
+      padding: 5px;
+      gap: 10px;
+      .rotate_img {
+        position: absolute;
+        top: 16px;
+        left: 15px;
+        width: 40px;
+        height: 40px;
+        background-color: #fff;
+        border-radius: 7px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .img {
+          object-fit: contain;
+          width: 30px;
+          height: 30px;
+        }
+      }
+      .card_img {
+        object-fit: contain;
+        height: 254px;
+        border-radius: 4px;
+      }
+      .desc {
+        font-size: 14px;
+        color: #1d1d1b;
+        font-weight: bold;
+        line-break: anywhere;
+        max-width: 236px;
+      }
+      .product_info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        .price_info {
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+          padding-inline-start: 10px;
+          .price {
+            font-size: 20px;
+            font-weight: bold;
+            color: #542e90;
+            span {
+              font-size: 15px;
+            }
+          }
+          .sale {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 10px;
+            .old_price {
+              font-size: 14px;
+              font-weight: bold;
+              color: #a7a9ac;
+              text-decoration: line-through;
+              span {
+                font-size: 11px;
+              }
+            }
+            .offer {
+              width: 52px;
+              height: 18px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              background-color: #fff200;
+              border-radius: 3px;
+              font-size: 10px;
+              font-weight: bold;
+            }
+          }
+          .hidden {
+            visibility: hidden;
+            height: 15px;
+          }
+        }
+        .brand {
+          width: 56px;
+          height: 37px;
+          padding-inline-end: 10px;
+        }
+      }
+      .rating_wrapper {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 13px;
+        margin-bottom: 5px;
+        .rating {
+          display: flex;
+          gap: 5px;
+        }
+        .star {
+          width: 17px;
+          color: #ffb900;
+        }
+        .empty_star {
+          width: 17px;
+          color: #c2bdbd;
+        }
+        .rating_number {
+          font-size: 14px;
+          font-weight: bold;
+        }
+      }
+      .provider {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        .provider_name {
+          font-size: 14px;
+          color: #1d1d1b;
+          font-weight: 500;
+          span {
+            font-weight: bold;
+          }
+        }
+        .provider_info {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 22px;
+          margin-bottom: 10px;
+          p {
+            font-size: 14px;
+            color: #1d1d1b;
+            font-weight: 500;
+            span {
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+  }
+}
