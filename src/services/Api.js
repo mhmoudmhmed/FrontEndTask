@@ -8,6 +8,7 @@ import slider1 from "../images/slider1.png";
 import slider2 from "../images/slider2.png";
 import slider3 from "../images/slider3.png";
 import slider4 from "../images/slider4.png";
+import brand from "../images/addidas.svg";
 
 export const products = [
   {
@@ -18,7 +19,7 @@ export const products = [
     old_price: 9999,
     currency: "LE",
     sale: "50%",
-    brand: "./images/addidas.svg",
+    brand: brand,
     rating: 4.2,
     total_rating: 5,
     provider: "cenena mall",
@@ -62,7 +63,7 @@ export const products = [
     old_price: 9999,
     currency: "LE",
     sale: "50%",
-    brand: "./images/addidas.svg",
+    brand: brand,
     rating: 4.2,
     total_rating: 5,
     provider: "cenena mall",
@@ -105,7 +106,7 @@ export const products = [
     old_price: null,
     currency: "LE",
     sale: null,
-    brand: "./images/addidas.svg",
+    brand: brand,
     rating: 3,
     total_rating: 5,
     provider: null,
@@ -148,7 +149,7 @@ export const products = [
     old_price: 9999,
     currency: "LE",
     sale: "30%",
-    brand: "./images/addidas.svg",
+    brand: brand,
     rating: 4.5,
     total_rating: 5,
     provider: "cenena mall",
@@ -191,7 +192,7 @@ export const products = [
     old_price: 9999,
     currency: "LE",
     sale: "70%",
-    brand: "./images/addidas.svg",
+    brand: brand,
     rating: 4,
     total_rating: 5,
     provider: null,

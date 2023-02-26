@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./infoHeader.scss";
 import ItemsModal from "./ItemsModal";
+import brand from "../../images/addidas.svg";
 
 const InfoHeader = ({ quantity, items }) => {
   const [drawer, setDrawer] = useState(false);
@@ -13,7 +14,7 @@ const InfoHeader = ({ quantity, items }) => {
             <img alt="newsletter" src={"./images/searchicon.svg"} />
             <input type="text" placeholder="Search" />
           </form>
-          <img src={"./images/addidas.svg"} alt="brand" className="brand_img" />
+          <img src={brand} alt="brand" className="brand_img" />
           <div className="product_actions">
             <div className="col" onClick={() => setDrawer(true)}>
               <div className="badge">{quantity}</div>
