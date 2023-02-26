@@ -15,7 +15,7 @@ const ItemsModal = ({ setDrawer, drawer, items, quantity }) => {
     >
       <div className="drawer_wrapper">
         <div className="close" onClick={() => setDrawer(false)}>
-          <img src={"/images/close_icon.svg"} alt="close" />
+          <img src={"./images/close_icon.svg"} alt="close" />
         </div>
         <p className="text">My Cart</p>
         <span>Cart Summary</span>
