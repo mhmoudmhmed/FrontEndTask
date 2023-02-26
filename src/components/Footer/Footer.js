@@ -65,7 +65,7 @@ const Footer = () => {
               <input type="text" placeholder="Enter Your Mail" />
               <button>
                 Subscribe
-                <img alt="newsletter" src={"/images/newsletter.svg"} />
+                <img alt="newsletter" src={"./images/newsletter.svg"} />
               </button>
             </form>
             <div className="footer_links">
