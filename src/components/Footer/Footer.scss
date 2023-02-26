@@ -63,7 +63,7 @@
           outline: none;
           font-size: 12px;
           padding-inline-start: 20px;
-          color: #542e90;
+          color: var(--secondary-color);
           font-weight: 600;
         }
         button {
@@ -71,7 +71,7 @@
           width: 140px;
           border: none;
           height: 38px;
-          background-color: #fff200;
+          background-color: var(--primary-color);
           border-radius: 19px;
           color: #000;
           font-size: 10px;

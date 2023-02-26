@@ -67,7 +67,7 @@ p {
         width: 15px;
         height: 15px;
         border-radius: 50%;
-        background-color: #fff200;
+        background-color: var(--primary-color);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -96,7 +96,7 @@ p {
   }
   .text {
     font-size: 28px;
-    color: #542e90;
+    color: var(--secondary-color);
     font-weight: bold;
     margin-bottom: 40px;
     text-align: center;
@@ -164,7 +164,7 @@ p {
           width: 100%;
           .price {
             font-size: 20px;
-            color: #542e90;
+            color: var(--secondary-color);
             font-weight: bold;
             span {
               font-size: 15px;
@@ -173,7 +173,7 @@ p {
           .remove {
             width: 80px;
             height: 24px;
-            background-color: #fff200;
+            background-color: var(--primary-color);
             border-radius: 12px;
             border: unset;
             font-size: 10px;
@@ -203,10 +203,10 @@ p {
       cursor: pointer;
     }
     .review {
-      background-color: #fff200;
+      background-color: var(--primary-color);
     }
     .complete {
-      background-color: #542e90;
+      background-color: var(--secondary-color);
       color: #fff;
     }
   }

@@ -1,4 +1,5 @@
 import React, { Suspense } from "react";
+import "./variables.scss";
 
 const Product = React.lazy(() => import("./pages/singleProduct"));
 

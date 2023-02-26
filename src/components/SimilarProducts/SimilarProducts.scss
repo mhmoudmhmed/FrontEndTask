@@ -26,7 +26,7 @@ p {
     gap: 10px;
     .title {
       font-size: 28px;
-      color: #542e90;
+      color: var(--secondary-color);
       font-weight: bold;
     }
     .desc {
@@ -95,7 +95,7 @@ p {
           .price {
             font-size: 20px;
             font-weight: bold;
-            color: #542e90;
+            color: var(--secondary-color);
             span {
               font-size: 15px;
             }
@@ -120,7 +120,7 @@ p {
               display: flex;
               align-items: center;
               justify-content: center;
-              background-color: #fff200;
+              background-color: var(--primary-color);
               border-radius: 3px;
               font-size: 10px;
               font-weight: bold;
