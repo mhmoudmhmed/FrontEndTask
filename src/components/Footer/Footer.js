@@ -12,19 +12,19 @@ const links = [
 ];
 const socialMedia = [
   {
-    uri: "/images/facebook.svg",
+    uri: "./images/facebook.svg",
   },
   {
-    uri: "/images/linkedin.svg",
+    uri: "./images/linkedin.svg",
   },
   {
-    uri: "/images/insta.svg",
+    uri: "./images/insta.svg",
   },
   {
-    uri: "/images/twitter.svg",
+    uri: "./images/twitter.svg",
   },
 ];
-const paymentMethods = ["/images/cash.png", "/images/visa.png", "/images/master.png"];
+const paymentMethods = ["./images/cash.png", "./images/visa.png", "./images/master.png"];
 
 const Footer = () => {
   return (
@@ -32,7 +32,7 @@ const Footer = () => {
       <div className="footer_row">
         <div className="footer_wrapper">
           <div className="left">
-            <img alt="logo" src={"/images/logo.svg"} />
+            <img alt="logo" src={"./images/logo.svg"} />
             <p className="text">
               <span>
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
@@ -99,7 +99,7 @@ const Footer = () => {
           </div>
           <div className="powered">
             <p>Powered By</p>
-            <img alt="nasnav" src={"/images/nasnav.svg"} />
+            <img alt="nasnav" src={"./images/nasnav.svg"} />
           </div>
         </div>
       </div>
