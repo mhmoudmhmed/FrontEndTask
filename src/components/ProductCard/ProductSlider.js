@@ -2,6 +2,8 @@ import React, { useRef, useState } from "react";
 
 const ProductSlider = ({ product }) => {
   const [img, setImg] = useState(product.product_images[0]);
+  let [imgIndex, setImgIndex] = useState(0);
+  const length = product.product_images.length;
   const refs = useRef([]);
   const hoverHandler = (image, i) => {
     setImg(image);
@@ -19,6 +21,21 @@ const ProductSlider = ({ product }) => {
       refs.current.push(el);
     }
   };
+
+  const onNext = () => {
+    setImgIndex(imgIndex === length - 1 ? 0 : imgIndex + 1);
+    if (imgIndex) {
+      setImg(product.product_images[imgIndex]);
+    }
+  };
+
+  const onPrev = () => {
+    setImgIndex(imgIndex === 0 ? length - 1 : imgIndex - 1);
+    if (imgIndex) {
+      setImg(product.product_images[imgIndex]);
+    }
+  };
+
   return (
     <div className="product_slider">
       <div className="slider_container">
@@ -36,7 +53,7 @@ const ProductSlider = ({ product }) => {
             </div>
           </div>
           <div className="bottom_slider">
-            <div className="swipe_left">
+            <div className="swipe_left" onClick={() => onPrev()}>
               <img src="./images/swipe.svg" alt="swipe" />
             </div>
             {product.product_images.map((image, index) => (
@@ -51,7 +68,12 @@ const ProductSlider = ({ product }) => {
                 <img src={image} alt="" />
               </div>
             ))}
-            <div className="swipe_right">
+            <div
+              className="swipe_right"
+              onClick={() => {
+                onNext();
+              }}
+            >
               <img src="./images/swipe.svg" alt="swipe" />
             </div>
           </div>
