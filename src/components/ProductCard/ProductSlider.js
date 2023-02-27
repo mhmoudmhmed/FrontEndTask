@@ -24,6 +24,13 @@ const ProductSlider = ({ product }) => {
       <div className="slider_container">
         <div className="slider">
           <div className="top_slider">
+            <div className="rotate_img">
+              <img
+                alt="rotate img"
+                src={"./images/rotate.svg"}
+                className="img"
+              />
+            </div>
             <div className="top_image">
               <img src={img} alt="carousel" />
             </div>
